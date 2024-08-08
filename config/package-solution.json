@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "react-hello-world-client-side-solution",
+    "id": "23d7ba9f-c909-451e-8594-92092dae861d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ReactHelloWorld description"
+      },
+      "longDescription": {
+        "default": "ReactHelloWorld description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "react-hello-world Feature",
+        "description": "The feature that activates elements of the react-hello-world solution.",
+        "id": "e6a2745d-bd83-4c66-bdf9-938b41d92316",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/react-hello-world.sppkg"
+  }
+}
