@@ -50,8 +50,8 @@ const ReactHelloWorld: React.FunctionComponent<IReactHelloWorldProps> = (props:I
 
     /* eslint-disable @typescript-eslint/no-floating-promises */
     (async () => {
-      // line wrapping added for readability
-      const endpoint: string = `${siteURL}/_api/web/lists?$select=Title&$filter=Hidden eq false&$orderby=Title&$top=10`;
+      //const endpoint: string = `${siteURL}/_api/web/lists?$select=Title&$filter=Hidden eq false&$orderby=Title&$top=10`;
+      const endpoint: string = `${siteURL}/_api/web/lists/getByTitle('Important Links')/items`;
       const rawResponse: SPHttpClientResponse = await spHttpClient.get(endpoint, SPHttpClient.configurations.v1);
       setSiteLists(
         (await rawResponse.json()).value.map((list: { Title: string }) => {
